@@ -7,7 +7,7 @@ using namespace std;
 // // first approch
 // // time O(n^2)
 // // space O(1)
-// void FindeSum(int arr[], int size)
+// void FindSum(int arr[], int size)
 // {
 
 //     bool ans = false;
@@ -63,7 +63,7 @@ int main()
 {
   int arr[] = {1, 8, 4, -3, 3};
   int size = 5;
-  //  FindeSum(arr,size);
+  //  FindSum(arr,size);
   SumZero(arr, size);
   return 0;
 }

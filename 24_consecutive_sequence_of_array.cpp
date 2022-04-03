@@ -20,8 +20,9 @@ private:
 
 public:
 /*
+
        //BrotForce Approche
-       // time complaxcity nlogN
+       // time complexity nlogN
       // for sorted array if given array is not sorted first sort the given array 
      
      void SubSequence(int size, int arr[])
@@ -51,7 +52,7 @@ public:
 
 */
     // optemise approche
-    // time complextcity O(n) and space comlexcity O(n)
+    // time complexity O(n) and space comlexity O(n)
     void SubSequence(int size, int arr[])
     {
         unordered_set<int> s;

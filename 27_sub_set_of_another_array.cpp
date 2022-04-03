@@ -3,7 +3,7 @@ using namespace std;
 class subSetOfArray
 {
 public:
-    // time complexcity is O(n^2)
+    // time complexity is O(n^2)
 
     void brootSubArray(int size1, int size2, int arr1[], int arr2[])
     {
@@ -26,8 +26,8 @@ public:
         }
         cout << "array is a sub set of another array";
     }
-    // time complexcity is O(n)
-    // space complexcity is O(m)
+    // time complexity is O(n)
+    // space complexity is O(m)
     void subArray(int size1, int size2, int arr1[], int arr2[])
     {
         unordered_set<int> s;
