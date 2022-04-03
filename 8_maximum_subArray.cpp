@@ -3,29 +3,35 @@ using namespace std;
 class maximum
 {
 public:
+    int Max(int a, int b)
+    {
+        if (a > b)
+        {
+
+            return a;
+        }
+        else
+        {
+
+            return b;
+        }
+    }
     void Maximum(int arr[], int size)
     {
-        int current = 0;
-        int Maxi = 0;
-        for (int i = 0; i < size; i++)
+        int max = arr[0];
+        int min = arr[0];
+        for (int i = 1; i < size; i++)
         {
-            current = current + arr[i];
-            if (current > Maxi)
-            {
-                Maxi = current;
-            }
-            if (current < 0)
-            {
-                current = 0;
-            }
+            min = Max(arr[i], (arr[i] + min));
+            max = Max(max, min);
         }
-        cout << "Maximum sum of sub array is " << Maxi;
+        cout << "Maximum sum of sub array is " << max;
     }
 };
 int main()
 {
-    int arr[] = {1, -23, 12, -23, -31, 1, 3, -23};
-    int size = 8;
+    int arr[] = {-8, -1};
+    int size = 2;
     maximum m;
     m.Maximum(arr, size);
     return 0;
